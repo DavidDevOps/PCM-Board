@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<script>
+    function check()
+    {
+        var frm = document.login;
+
+        if(!frm.userid.value){
+            alert('아이디를 입력하세요.');
+            frm.userid.focus();
+            return false;
+        }
+
+        if(!frm.passwd.value){
+            alert('암호를 입력하세요.');
+            frm.passwd.focus();
+            return false;
+        }
+
+        return true;
+    }
+
+    function login(){
+        document.location.href="../board/index.php";
+    }
+
+    function register(){
+        document.location.href="join.html"
+    }
+</script>
+<link rel="stylesheet" href="../login-form/css/style.css">
+</head>
+<body>
+    <form action="login_update.php" method="post"
+          name="login" onsubmit="return check();">
+    <table class="login_table">
+        <tr>
+            <td><font size="6">로그인</font></td>
+        </tr>
+        <tr>
+            <td>&nbsp ID <span>*</span></td>
+            <td><input type="text" name="name" id="name" placeholder="ID or email"></td>
+        </tr>
+        <tr>
+            <td>&nbsp Password <span>*</span></td>
+            <td><input type="password" name="passwd" id="passwd" placeholder="password"></td>
+        </tr>
+        <tr>
+            <td> <small>Keep Me</small><input type="checkbox" name="keep" value="true"></td>
+            <td><input type="submit" value="로그인" onclick="login();"> &n bsp <input type="button" value="회원가입" onclick="register();"></td>
+        </tr>
+    </table>
+    </form>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/juery.min.js'></script>
+    <script src="../login-form/js/index.js"></script>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* -------------------- Page Styles (not required) */
+div { margin: 8px; }
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 85% 0;
+   height: 40px;
+   overflow: hidden;
+   width: 130px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 16px;
+   height: 40px;
+   padding: 6px; /* If you add too much padding here, the options won't show in IE */
+   width: 130px;
+}
+/* -------------------- Rounded Corners */
+.rounded {
+   border-radius: 40px;
+}
+
+
+/* -------------------- Colors: Background */
+.black   { background-color: #353535; }
+/* -------------------- Colors: Text */
+.black select   { color: #fff; }
